@@ -1,7 +1,7 @@
 import './index.css'
 import ReactDOM from 'react-dom'
-import Primeiro from './componants/basicos/Primeiro'
-
+import Primeiro from './components/basicos/Primeiro'
+import ComParametro from './components/basicos/ComParametro'
 
 
 
@@ -9,6 +9,11 @@ import Primeiro from './componants/basicos/Primeiro'
 ReactDOM.render(
     <div>
         <Primeiro></Primeiro>
+        <ComParametro 
+        titulo="Situação do Aluno" 
+        aluno="Pedro"
+        nota={6}
+        ></ComParametro>
     </div>
     , document.getElementById('root')
     )
