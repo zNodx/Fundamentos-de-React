@@ -1,5 +1,11 @@
 body {
     background-color: #222;
     color: #fff;
+    text-align: center ;
+    font-family: Fredoka One;
 }
 
+
+h2,h3{
+    margin: 0;
+}
