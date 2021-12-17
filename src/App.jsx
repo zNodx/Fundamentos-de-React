@@ -1,20 +1,35 @@
 import './App.css'
+import ListaAluno from './components/repetição/ListaAluno'
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
 import Familia from './components/basicos/Familia'
+import Membro from './components/basicos/FamiliaMembro'
 
 export default () =>(
     <div className="App">  
         <h1>Fundamentos React (Arrow)</h1>
 
         <div className="Cards">
+
+        {/*----------EXERCÌCIO #06------------- */}
+
+    <Card titulo="#06 - Repetição" color="#30pp29">
+    <Familia sobName="Silva">
+            <ListaAluno></ListaAluno>
+    </Familia>
+    </Card>
+
         {/*----------EXERCÌCIO #05------------- */}
 
     <Card titulo="#05 - Componente com Filhos" color="#30FF29">
-    <Familia sobName="Ferreira"></Familia>
+    <Familia sobName="Silva">
+            <Membro name="Pedro"/>
+            <Membro name="Ana"/>
+            <Membro name="Gustavo"/>
+    </Familia>
     </Card>
 
         {/*----------EXERCÌCIO #04------------- */}
