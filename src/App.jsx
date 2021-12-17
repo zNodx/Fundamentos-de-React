@@ -4,12 +4,19 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
+import Familia from './components/basicos/Familia'
 
 export default () =>(
     <div className="App">  
         <h1>Fundamentos React (Arrow)</h1>
 
         <div className="Cards">
+        {/*----------EXERCÌCIO #05------------- */}
+
+    <Card titulo="#05 - Componente com Filhos" color="#30FF29">
+    <Familia sobName="Ferreira"></Familia>
+    </Card>
+
         {/*----------EXERCÌCIO #04------------- */}
 
         <Card titulo="#04 Desafio Aleatório" color="#282e54">
