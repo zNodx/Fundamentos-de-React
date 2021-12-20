@@ -1,11 +1,12 @@
 import './App.css'
-import ListaAluno from './components/repetição/ListaAluno'
+import ListaAlunos from './components/repeticao/ListaAlunos'
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
 import Familia from './components/basicos/Familia'
+import TabelaProduto from './components/repeticao/TabelaProduto'
 import Membro from './components/basicos/FamiliaMembro'
 
 export default () =>(
@@ -14,21 +15,25 @@ export default () =>(
 
         <div className="Cards">
 
+    {/*----------EXERCÌCIO #07------------- */}
+
+    <Card titulo="#07 - Produtos" color="#3FDDF9">
+        <TabelaProduto/>
+    </Card>
+    
         {/*----------EXERCÌCIO #06------------- */}
 
-    <Card titulo="#06 - Repetição" color="#30pp29">
-    <Familia sobName="Silva">
-            <ListaAluno></ListaAluno>
-    </Familia>
+    <Card titulo="#06 - Listas" color="#FDFF29">
+        <ListaAlunos></ListaAlunos>
     </Card>
 
         {/*----------EXERCÌCIO #05------------- */}
 
     <Card titulo="#05 - Componente com Filhos" color="#30FF29">
     <Familia sobName="Silva">
-            <Membro name="Pedro"/>
-            <Membro name="Ana"/>
-            <Membro name="Gustavo"/>
+        <Membro name="Pedro"/>
+        <Membro name="Ana"/>
+        <Membro name="Gustavo"/>
     </Familia>
     </Card>
 
