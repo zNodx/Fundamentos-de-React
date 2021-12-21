@@ -12,18 +12,34 @@ import Familia from './components/basicos/Familia'
 import TabelaProduto from './components/repeticao/TabelaProduto'
 import Membro from './components/basicos/FamiliaMembro'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
-
+import Input from './components/formulario/Input'
+import Contador from './components/contador/Contador'
 export default () =>(
     <div className="App">  
         <h1>Fundamentos React (Arrow)</h1>
 
         <div className="Cards">
+    
+    {/*----------EXERCÌCIO #12------------ */}
+
+    <Card titulo="#12 - Contador" color="#33DD95">
+        <Contador numeroInicial={200}/>
+    </Card>  
+
+
+    {/*----------EXERCÌCIO #11------------ */}
+
+    <Card titulo="#11 - Comunicação Controlada" color="#DD9595">
+        <Input/>
+    </Card>         
+
 
           {/*----------EXERCÌCIO #10------------ */}
 
-  <Card titulo="#09 - Comunicação Indireta" color="#339595">
+    <Card titulo="#10 - Comunicação Indireta" color="#339595">
         <IndiretaPai></IndiretaPai>
-    </Card>        
+    </Card>      
+
         {/*----------EXERCÌCIO #09------------- */}
 
   <Card titulo="#09 - Comunicação Direta" color="#332395">
