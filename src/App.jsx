@@ -1,4 +1,6 @@
 import './App.css'
+
+import Mega from './components/mega/Mega'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
@@ -19,11 +21,18 @@ export default () =>(
         <h1>Fundamentos React (Arrow)</h1>
 
         <div className="Cards">
+
+    {/*----------EXERCÌCIO #12------------ */}
+
+    <Card titulo="#13 - Megasena" color="#28FF35">
+        <Mega qtde={8}/>
+    </Card>  
+
     
     {/*----------EXERCÌCIO #12------------ */}
 
     <Card titulo="#12 - Contador" color="#33DD95">
-        <Contador numeroInicial={200}/>
+        <Contador numeroInicial={10}/>
     </Card>  
 
 
